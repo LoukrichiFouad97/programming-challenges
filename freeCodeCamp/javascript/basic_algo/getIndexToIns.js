@@ -16,9 +16,16 @@ function getIndexToIns(arr, num) {
 	bubbleSort(arr);
 	// arr.sort((a, b) => a - b);
 
-	for (var i = 0; i < arr.length; i++) {
-		if (arr[i] >= num) return i;
-	}
+	// SOLUTION #1 USING FOR LOOP
+	// for (var i = 0; i < arr.length; i++) {
+	// 	if (arr[i] >= num) return i;
+	// }
+
+	// SOLUTION #2 USNIG BUILT IN METHOD FILTER
+	return arr.filter(function (value) {
+		return num > value;
+	}).length;
+
 
 
 	return arr.length;
@@ -27,3 +34,4 @@ function getIndexToIns(arr, num) {
 // getIndexToIns([30, 55, 485, 10, 20, 40, 60], 30);
 console.log(getIndexToIns([10, 20, 30, 40, 50], 35)); // should return 3.
 // console.log(getIndexToIns([30, 55, 485, 10, 20, 40, 60], 30));
+
