@@ -9,12 +9,23 @@
 
 function chunkArrayInGroups(arr, size) {
 	// 3 - Break it down
-	// ** loop over the arr and divide it into groups using size
+	// ** create an array to return it at the end
+	// ** loop over the arr and divide it into small groups using size 
 	// ** put all of the groups in a new array
 	// ** return that array that contains all of the groups
+	var newArr = [];
+	var index = 0;
+
+	while (index < arr.length) {
+		newArr.push(arr.slice(index, index + size));
+		index += size;
+	}
+
+	return newArr;
 }
 
 console.log(chunkArrayInGroups(["a", "b", "c", "d", "e", "f"], 2));
+// console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
 
 // 2 - Explore Examples
 // chunkArrayInGroups(["a", "b", "c", "d"], 2) ==> [['a', "b"], ['b', "c"]]
