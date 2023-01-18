@@ -1,0 +1,20 @@
+{
+  "name": "programming-challenges",
+  "version": "1.0.0",
+  "description": "A collection of algo, ds and programing challanges.",
+  "main": "add-up-nums.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoukrichiFouad97/programming-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LoukrichiFouad97/programming-challenges/issues"
+  },
+  "homepage": "https://github.com/LoukrichiFouad97/programming-challenges#readme"
+}
